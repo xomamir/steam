@@ -42,6 +42,8 @@ def get_game(request: HttpRequest, game_id: int) -> HttpResponse:
         return HttpResponse(
             f'<h1>Игры с id {game_id} не существует!</h1>'
         )
-    return HttpResponse(
-        f'<h1>ID: {game.name}</h1>'
+    return render(
+        request=request,
+        template_name='games/store-product.html',
+        context={}
     )

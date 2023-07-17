@@ -1,11 +1,11 @@
 from django.contrib import admin
 
-from typing import Union , TypeAlias
+from typing import Union , Type
 # Register your models here.
 
 from .models import Game, Genre, Company, Comment , WishList , Order , InviteCard
 
-MyType: TypeAlias = tuple[tuple[Union[str ,dict[str,list[str]]]]]
+MyType: Type = tuple[tuple[Union[str ,dict[str,list[str]]]]]
 
 class GameAdmin(admin.ModelAdmin):
 

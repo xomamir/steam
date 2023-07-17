@@ -76,6 +76,7 @@
   <!-- video section start -->
   <main>
     {% for game in games %}
+    <a href="/games/list/{{ game.pk }}" class="aa">
     <div class="card">
       <div class="content">
         <div class="main__inforation">
@@ -95,6 +96,7 @@
         </div>
       </div>
     </div>
+    </a>
     {% endfor %}
   </main>
   <!-- video section end -->

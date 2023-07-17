@@ -73,3 +73,20 @@ main {
     color: green;
     font-size: 36px;
 }
+
+.aa {
+    width: 70%;
+    height: 270px;
+    box-shadow: 0 5px 10px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
